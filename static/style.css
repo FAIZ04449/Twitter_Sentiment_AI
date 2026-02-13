@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6ecf0;
+}
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    background: white;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+    color: #1da1f2;
+}
+
+.sidebar p {
+    font-size: 18px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar p:hover {
+    color: #1da1f2;
+}
+
+/* Feed */
+.feed {
+    flex: 1;
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* Tweet box */
+textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+    resize: none;
+}
+
+/* Button */
+button {
+    margin-top: 10px;
+    background: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0d8ddb;
+}
+
+/* Result Card */
+.result-card {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Sentiment Colors */
+.positive {
+    color: green;
+    font-weight: bold;
+}
+
+.negative {
+    color: red;
+    font-weight: bold;
+}
+
+.neutral {
+    color: gray;
+    font-weight: bold;
+}
