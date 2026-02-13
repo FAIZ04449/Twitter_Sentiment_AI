@@ -1,8 +1,16 @@
 import re
 import emoji
+import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 
+# Ensure vader lexicon is available
+try:
+    nltk.data.find('sentiment/vader_lexicon.zip')
+except LookupError:
+    nltk.download('vader_lexicon')
+
 sia = SentimentIntensityAnalyzer()
+
 
 # Slang dictionary
 slang_dict = {
